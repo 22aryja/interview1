@@ -6,7 +6,7 @@ export const productsWidgetMock: ProductsWidgetData = {
     {
       id: "gel-midou-2l",
       name: "Гель для стирки Midou 2л",
-      sku: "95950803030949",
+      description: "95950803030949",
       imageUrl: "/products/gel-midou-2l.png",
       sold: { quantity: 64, amount: 1345456 },
       stock: { quantity: 64, amount: 1345456 },
@@ -15,7 +15,7 @@ export const productsWidgetMock: ProductsWidgetData = {
     {
       id: "ultra-soft-paper",
       name: "Ультрамягкие натуральные бумажные полотенца",
-      sku: "95950803030949",
+      description: "95950803030949",
       imageUrl: "/products/ultra-soft-paper.png",
       sold: { quantity: 64, amount: 1345456 },
       stock: { quantity: 64, amount: 1345456 },
@@ -24,7 +24,7 @@ export const productsWidgetMock: ProductsWidgetData = {
     {
       id: "rejuvenating-24k-gold",
       name: "Омолаживающий набор с 24K золотом",
-      sku: "95950803030949",
+      description: "95950803030949",
       imageUrl: "/products/rejuvenating-24k-gold.png",
       sold: { quantity: 300, amount: 50000 },
       stock: { quantity: 64, amount: 1345456 },
@@ -53,7 +53,7 @@ export const productsWidgetMock: ProductsWidgetData = {
     {
       id: "tv-pd-1",
       name: "Телевизор PD",
-      sku: "95950803030949",
+      description: "95950803030949",
       imageUrl: "/products/tv-pd.png",
       returns: { quantity: 301, amount: 10000000 },
       stock: { quantity: 15, amount: 3000000 },
@@ -62,7 +62,7 @@ export const productsWidgetMock: ProductsWidgetData = {
     {
       id: "tv-pd-2",
       name: "Телевизор PD",
-      sku: "95950803030949",
+      description: "95950803030949",
       imageUrl: "/products/tv-pd.png",
       returns: { quantity: 301, amount: 10000000 },
       stock: { quantity: 15, amount: 3000000 },

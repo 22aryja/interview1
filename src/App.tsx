@@ -1,11 +1,13 @@
 import ChannelsWidget from "./features/channels";
+import ProductsWidget from "./features/products";
 
 function App() {
-  return (
-    <main className="flex min-h-screen items-start justify-center bg-gray-200 p-10 gap-6">
-      <ChannelsWidget />
-    </main>
-  );
+    return (
+        <main className="flex min-h-screen items-start justify-center bg-gray-200 p-10 gap-6">
+            <ChannelsWidget />
+            <ProductsWidget />
+        </main>
+    );
 }
 
 export default App;
