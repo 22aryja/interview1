@@ -1,9 +1,11 @@
-import { useState } from "react";
+import ChannelsWidget from "./features/channels";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <div className="text-amber-800 text-4xl">Hello</div>;
+  return (
+    <main className="flex min-h-screen items-start justify-center bg-gray-200 p-10 gap-6">
+      <ChannelsWidget />
+    </main>
+  );
 }
 
 export default App;
