@@ -29,21 +29,21 @@ const ClientWidget = () => {
             <Button
               variant="ghost"
               size="sm"
-              className="text-Secondary text-sm font-normal"
+              className="transition-colors rounded-[8px] w-6 h-6 p-1 hover:bg-[#0000000A]"
             >
               <Arrows />
             </Button>
           </PopoverTrigger>
         }
       >
-        <TabsContent value="clients" className="mt-4">
+        <TabsContent value="clients">
           <div className="flex flex-col gap-2">
             {clientsWidgetMock.cities.map((city: TopCity) => (
               <Card key={city.id} item={city} mode={filter} />
             ))}
           </div>
         </TabsContent>
-        <TabsContent value="cities" className="mt-4">
+        <TabsContent value="cities">
           <div className="flex flex-col gap-2">
             {clientsWidgetMock.clients.map((client: TopClient) => (
               <Card key={client.id} item={client} />

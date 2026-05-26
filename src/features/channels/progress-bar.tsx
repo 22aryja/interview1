@@ -1,4 +1,5 @@
 import type { FC } from "react";
+import Flag from "@/assets/icons/flag.svg?react";
 
 interface Props {
   percent: number;
@@ -19,22 +20,10 @@ const ProgressBar: FC<Props> = ({ percent }) => {
       >
         {percent}%
       </span>
-      <svg
-        className="absolute -top-3 text-Secondary/50 -translate-x-1/2"
+      <Flag
+        className="absolute -top-3 -translate-x-1/2 w-3 h-3 text-Secondary"
         style={{ left: "70%" }}
-        width="11"
-        height="13"
-        viewBox="0 0 11 13"
-        fill="none"
-      >
-        <path
-          d="M1 1v11M1 1h8L7 4.5 9 8H1"
-          stroke="currentColor"
-          strokeWidth="1.4"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
+      />
     </div>
   );
 };

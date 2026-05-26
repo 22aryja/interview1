@@ -4,6 +4,7 @@ import { topChannelsMock, topManagersMock } from "@/mocks/channels";
 import type { CityGroup, TopManager } from "@/types/channels";
 import CityItem from "./city-item";
 import Manager from "./manager";
+import Empty from "@/components/ui/empty";
 
 const ChannelsWidget = () => {
   return (
@@ -22,18 +23,22 @@ const ChannelsWidget = () => {
         </Button>
       }
     >
-      <TabsContent value="channels" className="mt-4">
+      <TabsContent value="channels">
         <div className="flex flex-col">
           {topChannelsMock.map((item: CityGroup) => (
             <CityItem key={item.id} group={item} />
           ))}
         </div>
       </TabsContent>
-      <TabsContent value="managers" className="mt-4">
+      <TabsContent value="managers">
         <div className="flex flex-col gap-2">
           {topManagersMock.managers.map((manager: TopManager) => (
             <Manager key={manager.id} manager={manager} />
           ))}
+          <Empty
+            label="Нет менеджеров"
+            desc="Нет найденных менеджеров за данный период"
+          />
         </div>
       </TabsContent>
     </Widget>

@@ -2,6 +2,7 @@ import type { TopManager } from "@/types/channels";
 import type { FC } from "react";
 import dummyImg from "@/assets/images/dummy.png";
 import ProgressBar from "./progress-bar";
+import Arrow from "@/assets/icons/arrow-bold.svg?react";
 
 interface Props {
   manager: TopManager;
@@ -21,7 +22,9 @@ const Manager: FC<Props> = ({ manager }) => {
             <h2 className="text-xs text-[#95A1AC]">{manager.company}</h2>
           </div>
         </div>
-        <button>A</button>
+        <button className="p-1 rounded-[8px] bg-[#0000000A]">
+          <Arrow className="w-4 h-4 text-Secondary" />
+        </button>
       </section>
 
       <section className="px-2 grid grid-cols-2 gap-1 mt-2">
