@@ -14,7 +14,7 @@ interface WidgetProps {
 
 const Widget = ({ tabs, defaultTab, actions, children }: WidgetProps) => {
   return (
-    <div className="rounded-2xl bg-white w-132.75 h-133.25 flex flex-col overflow-hidden">
+    <div className="rounded-2xl bg-white w-full h-full flex flex-col overflow-hidden">
       <Tabs
         defaultValue={defaultTab ?? tabs[0]?.value}
         className="flex flex-col flex-1 min-h-0 gap-0"
